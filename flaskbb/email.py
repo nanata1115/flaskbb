@@ -8,6 +8,9 @@
     :copyright: (c) 2014 by the FlaskBB Team.
     :license: BSD, see LICENSE for more details.
 """
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 import logging
 from flask import render_template
 from flask_mail import Message
