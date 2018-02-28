@@ -44,6 +44,9 @@ class FlaskBBDomain(Domain):
             return babel.support.NullTranslations()
 
         locale = get_locale()
+	f = open("/data/fla.log","a")
+	print >>f, "locale     %s" %locale
+	f.close()
         cache = self.get_translations_cache()
         translations = cache.get(str(locale))
 
